@@ -6,7 +6,7 @@ class ValueError(Exception):
         super().__init__(message)
 
 
-def get_posts_all(path='/data/posts.json'):
+def get_posts_all(path='data/posts.json'):
     """Загружает файл 'posts.json'"""
     with open(path, 'r', encoding='utf-8') as file:
         posts = json.load(file)
